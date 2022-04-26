@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="data.xsl" type="text/xsl" ?>
+<socialSite>
+    <person id="1">
+        <personalInformation>
+            <surname>František</surname>
+            <lastName>Kobliha</lastName>
+            <age>21</age>
+            <birthDay>2001-11-02</birthDay>
+            <sex>Male</sex>
+        </personalInformation>
+        <contactInformation>
+            <communication communicationType="email">frantisek.kobliha@seznam.cz</communication>
+            <communication communicationType="phoneNumber">+420698456234</communication>
+            <adress>
+                <street>Kuželova</street>
+                <streetNumber>201</streetNumber>
+                <postcode>16500</postcode>
+                <country>CZ</country>
+            </adress>
+        </contactInformation>
+        <messageHistory>
+            <otherParticipantID>2</otherParticipantID>
+            <messages messageID = "1">
+                <Sender value="id">2</Sender>
+                <text>Ahoj Františku</text>
+                <messageSentDateTime>2022-05-30T09:00:00</messageSentDateTime>
+            </messages>
+            <messages messageID = "2">
+                <Sender value="id">1</Sender>
+                <text>Ahoj Kláro</text>
+                <messageSentDateTime>2022-05-30T11:00:00</messageSentDateTime>
+            </messages>
+        </messageHistory>
+    </person>
+    <person id="2">
+        <personalInformation>
+            <surname>Klára</surname>
+            <lastName>Košilová</lastName>
+            <age>29</age>
+            <sex>Unknown</sex>
+        </personalInformation>
+        <contactInformation>
+            <communication communicationType="email">klárka@seznam.cz</communication>
+            <adress>
+                <street>U vějíře</street>
+                <streetNumber>3</streetNumber>
+                <postcode>48651</postcode>
+                <country>CZ</country>
+            </adress>
+        </contactInformation>
+        <messageHistory>
+            <otherParticipantID>2</otherParticipantID>
+            <messages messageID = "1">
+                <sender>2</sender>
+                <text>Ahoj Františku</text>
+                <messageSentDateTime>2022-05-30T09:00:00</messageSentDateTime>
+            </messages>
+            <messages messageID = "2">
+                <Sender>1</Sender>
+                <text>Ahoj Kláro</text>
+                <messageSentDateTime>2022-05-30T11:00:00</messageSentDateTime>
+            </messages>
+        </messageHistory>
+    </person>
+    <person id="3">
+        <personalInformation>
+            <surname>Petr</surname>
+            <lastName>Rohlík</lastName>
+            <age>12</age>
+            <birthDay>2010-01-02</birthDay>
+            <sex>Male</sex>
+        </personalInformation>
+        <contactInformation>
+            <communication communicationType="phoneNumber">+420897123456</communication>
+            <adress>
+                <street>Francouzská</street>
+                <streetNumber>1</streetNumber>
+                <postcode>13500</postcode>
+                <country>CZ</country>
+            </adress>
+        </contactInformation>
+        <messageHistory>
+            <otherParticipantID>4</otherParticipantID>
+            <messages messageID = "3">
+                <Sender value="id">3</Sender>
+                <text>Ahoj Brunhildo</text>
+                <messageSentDateTime>2021-05-30T10:00:00</messageSentDateTime>
+            </messages>
+            <messages messageID = "4">
+                <Sender value="id">3</Sender>
+                <text>Jak se máš?</text>
+                <messageSentDateTime>2021-05-30T10:00:12</messageSentDateTime>
+            </messages>
+        </messageHistory>
+    </person>
+    <person id="4">
+        <personalInformation>
+            <surname>Brunhilda</surname>
+            <lastName>Zdravá</lastName>
+            <age>12</age>
+            <birthDay>2010-01-02</birthDay>
+            <sex>Female</sex>
+        </personalInformation>
+        <contactInformation>
+            <communication communicationType="email">brunhi@DEseznam.de</communication>
+            <adress>
+                <street>Německá</street>
+                <streetNumber>5</streetNumber>
+                <postcode>48651</postcode>
+                <country>DE</country>
+            </adress>
+        </contactInformation>
+        <messageHistory>
+            <otherParticipantID>2</otherParticipantID>
+            <messages messageID = "3">
+                <Sender value="id">3</Sender>
+                <text>Ahoj Brunhildo</text>
+                <messageSentDateTime>2021-05-30T10:00:00</messageSentDateTime>
+            </messages>
+            <messages messageID = "4">
+                <Sender value="id">3</Sender>
+                <text>Jak se máš?</text>
+                <messageSentDateTime>2021-05-30T10:00:12</messageSentDateTime>
+            </messages>
+        </messageHistory>
+    </person>
+    <person id="5">
+        <personalInformation>
+            <surname>Lukáš</surname>
+            <lastName>Chutný</lastName>
+            <age>20</age>
+            <birthDay>2002-01-02</birthDay>
+            <sex>Male</sex>
+        </personalInformation>
+        <contactInformation>
+            <communication communicationType="email">lukáš@seznam.cz</communication>
+        </contactInformation>
+    </person>
+    <person id="6">
+        <personalInformation>
+            <surname>Jakub</surname>
+            <lastName>Dlouhý</lastName>
+            <age>21</age>
+            <birthDay>2001-01-02</birthDay>
+            <sex>Male</sex>
+        </personalInformation>
+        <contactInformation>
+            <communication communicationType="email">Jakub.Dlouhý@seznam.cz</communication>
+        </contactInformation>
+    </person>
+    <person id="7">
+        <personalInformation>
+            <surname>Tereza</surname>
+            <lastName>Kolmá</lastName>
+            <age>19</age>
+            <birthDay>2002-01-02</birthDay>
+            <sex>Male</sex>
+        </personalInformation>
+        <contactInformation>
+            <communication communicationType="email">Kolmice@seznam.cz</communication>
+        </contactInformation>
+    </person>
+    <person id="8">
+        <personalInformation>
+            <surname>Lucka</surname>
+            <lastName>Šikovná</lastName>
+            <age>19</age>
+            <birthDay>2002-01-02</birthDay>
+            <sex>Male</sex>
+        </personalInformation>
+        <contactInformation>
+            <communication communicationType="email">Kolmice@seznam.cz</communication>
+        </contactInformation>
+    </person>
+    <person id="9">
+        <personalInformation>
+            <surname>Tereza</surname>
+            <lastName>Kolmá</lastName>
+            <age>19</age>
+            <birthDay>2002-01-02</birthDay>
+            <sex>Female</sex>
+        </personalInformation>
+        <contactInformation>
+            <communication communicationType="phoneNumber">+420648315648</communication>
+        </contactInformation>
+    </person>
+    <person id="10">
+        <personalInformation>
+            <surname>Jan</surname>
+            <lastName>Štrof</lastName>
+            <age>17</age>
+            <birthDay>2005-01-02</birthDay>
+            <sex>Unknown</sex>
+        </personalInformation>
+        <contactInformation>
+            <communication communicationType="phoneNumber">+420125356148</communication>
+        </contactInformation>
+    </person>
+</socialSite>

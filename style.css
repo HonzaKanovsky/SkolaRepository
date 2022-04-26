@@ -1,0 +1,97 @@
+:root {
+  --backgroundImageURL: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.1.1477864577.1643760000");
+}
+
+body {
+  background-color: lightblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  background-image: var(--backgroundImageURL);
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+article {
+  margin: 0px auto;
+  width: 60%;
+}
+article aside {
+  border-style: solid;
+  border-color: yellow;
+  background-color: yellow;
+  width: 20%;
+  text-align: left;
+  float: right;
+  padding: 0px 0px 30px 10px;
+}
+
+.menuBar {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: lightblue;
+  float: left;
+  border: 2px;
+}
+
+.menuBar a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menuBar h2 {
+  text-align: center;
+  padding: 0;
+}
+
+.menuBar a:hover {
+  background-color: navy;
+  color: white;
+}
+
+.pageFooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+.divider {
+  border-top: 1px solid white;
+}
+.personTable{
+  text-align: center;
+  border-collapse: collapse;
+}
+.personTable td, .personTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.personTable th{
+  background-color: chartreuse;
+}
+
+.personTable tr:nth-child(odd){
+  background-color:lightgrey
+}
+
+.personTable tr:nth-child(even){
+  background-color:blanchedalmond
+}
+
