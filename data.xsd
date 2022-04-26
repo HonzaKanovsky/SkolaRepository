@@ -1,0 +1,156 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="socialSite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="person" maxOccurs="unbounded" minOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="personalInformation">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="surname">
+                      <xs:annotation>
+                          <xs:documentation>
+                            <description value="surname" />
+                            <format value="a..35" />
+                            <optionality value="R" />
+                          </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:string" name="lastName">
+                      <xs:annotation>
+                        <xs:documentation>
+                          <description value="lastName" />
+                          <format value="a..35" />
+                          <optionality value="R" />
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:integer" name="age">
+                      <xs:annotation>
+                        <xs:documentation>
+                          <description value="age" />
+                          <format value="n..3" />
+                          <optionality value="R" />
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:date" name="birthDay" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>
+                          <description value="Day of birth" />
+                          <format value="an10" />
+                          <optionality value="O" />
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element type="xs:string" name="sex" minOccurs="0" maxOccurs="1">
+                      <xs:annotation>
+                        <xs:documentation>
+                          <description value="sex" />
+                          <format value="a..10" />
+                          <optionality value="O" />
+                        </xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="contactInformation">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="communication" maxOccurs="2" minOccurs="1">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="communicationType" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="adress" minOccurs="0" maxOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="street">
+                            <xs:annotation>
+                              <xs:documentation>
+                                <description value="street name" />
+                                <format value="a..70" />
+                                <optionality value="R" />
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element type="xs:short" name="streetNumber">
+                            <xs:annotation>
+                              <xs:documentation>
+                                <description value="street number" />
+                                <format value="n..4" />
+                                <optionality value="R" />
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element type="xs:int" name="postcode">
+                            <xs:annotation>
+                              <xs:documentation>
+                                <description value="postCode" />
+                                <format value="a..5" />
+                                <optionality value="R" />
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element type="xs:string" name="country">
+                            <xs:annotation>
+                              <xs:documentation>
+                                <description value="Country code" />
+                                <format value="a2" />
+                                <optionality value="R" />
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="messageHistory" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="otherParticipantID" />
+                    <xs:element name="messages" maxOccurs="99" minOccurs="1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="sender" minOccurs="1">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:byte">
+                                  <xs:attribute type="xs:string" name="value" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="text">
+                            <xs:annotation>
+                              <xs:documentation>
+                                <description value="messageText" />
+                                <format value="an..256" />
+                                <optionality value="R" />
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element type="xs:dateTime" name="messageSentDateTime" />
+                        </xs:sequence>
+                        <xs:attribute type="xs:byte" name="messageID" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="id" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
